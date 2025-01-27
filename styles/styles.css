@@ -33,6 +33,17 @@
 
 /* fallback fonts */
 @font-face {
+  font-family:"ultra-light Fallback";
+  font-style:normal;
+  font-weight:normal;
+  src:local("Arial");
+  ascent-override:88.25%;
+  descent-override:22.88%;
+  line-gap-override:0.00%;
+  size-adjust:109.69%;
+}
+
+@font-face {
   font-family:"Glyphicons Halflings Fallback";
   font-style:normal;
   font-weight:normal;
@@ -41,28 +52,6 @@
   descent-override:10.25%;
   line-gap-override:0.00%;
   size-adjust:100.00%;
-}
-
-@font-face {
-  font-family:"FontAwesome Fallback";
-  font-style:normal;
-  font-weight:normal;
-  src:local("Arial");
-  ascent-override:85.71%;
-  descent-override:14.29%;
-  line-gap-override:0.00%;
-  size-adjust:100.00%;
-}
-
-@font-face {
-  font-family:"Montserrat Fallback";
-  font-style:normal;
-  font-weight:400;
-  src:local("Arial");
-  ascent-override:84.98%;
-  descent-override:22.04%;
-  line-gap-override:0.00%;
-  size-adjust:113.90%;
 }
 
 @font-face {
@@ -77,14 +66,25 @@
 }
 
 @font-face {
-  font-family:"ultra-light Fallback";
+  font-family:"Montserrat Fallback";
+  font-style:normal;
+  font-weight:400;
+  src:local("Arial");
+  ascent-override:84.98%;
+  descent-override:22.04%;
+  line-gap-override:0.00%;
+  size-adjust:113.90%;
+}
+
+@font-face {
+  font-family:"FontAwesome Fallback";
   font-style:normal;
   font-weight:normal;
   src:local("Arial");
-  ascent-override:88.25%;
-  descent-override:22.88%;
+  ascent-override:85.71%;
+  descent-override:14.29%;
   line-gap-override:0.00%;
-  size-adjust:109.69%;
+  size-adjust:100.00%;
 }
 
 @media (width>=900px) {
