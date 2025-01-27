@@ -1,8 +1,8 @@
 
-/* Ensure the header takes the full width and has a solid background color */
+/* Scope the CSS to the most outer class: .header-wrapper */
 .header-wrapper {
   width: 100%;
-  background-color: #333; /* Dark background color */
+  background-color: #4a4a4a; /* Dark background color matching the original */
   color: #fff; /* Light text color */
 }
 
@@ -14,6 +14,8 @@
   position: fixed;
   width: 100%;
   z-index: 2;
+  max-width: 1264px;
+  margin: 0 auto;
 }
 
 header nav {
@@ -24,7 +26,6 @@ header nav {
 }
 
 header .nav-brand {
-  order: 1; /* Order 1: Brand logo */
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -36,7 +37,6 @@ header nav .nav-brand img {
 }
 
 header nav .nav-sections {
-  order: 2; /* Order 2: Menu to navigate */
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -67,8 +67,35 @@ header nav .nav-sections ul > li::before {
   width: 32px;
   height: 32px;
   margin-bottom: 8px;
-  background-color: #999; /* Temporary icon background color */
-  border-radius: 50%;
+  display: inline-block; /* Ensure it is treated as an inline element */
+  background-size: contain; /* Ensure the icon is not stretched */
+}
+
+header nav .nav-sections ul > li:nth-child(1)::before {
+  background: url('path-to-about-icon.png') no-repeat center center; /* About icon path */
+}
+
+header nav .nav-sections ul > li:nth-child(2)::before {
+  background: url('path-to-industries-icon.png') no-repeat center center; /* Industries icon path */
+}
+
+header nav .nav-sections ul > li:nth-child(3)::before {
+  background: url('path-to-consumers-icon.png') no-repeat center center; /* Consumers icon path */
+}
+
+header nav .nav-sections ul > li:nth-child(4)::before {
+  background: url('path-to-searches-icon.png') no-repeat center center; /* Searches icon path */
+}
+
+header nav .nav-sections ul > li:nth-child(5)::before {
+  background: url('path-to-reports-icon.png') no-repeat center center; /* Reports icon path */
+}
+
+header nav .nav-sections ul > li::after {
+  content: '▼'; /* Dropdown indicator */
+  font-size: 12px;
+  color: #fff;
+  margin-top: 5px;
 }
 
 header nav .nav-sections ul > li > a {
@@ -101,7 +128,6 @@ header nav .nav-sections ul > li > ul > li:hover {
 }
 
 header nav .nav-tools {
-  order: 3; /* Order 3: Tool section */
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -123,4 +149,21 @@ header nav .nav-tools table td:first-child {
 header nav .nav-hamburger {
   display: none;
   visibility: hidden;
+}
+
+.header-wrapper .nav-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Additional styling to ensure alignment */
+.header-wrapper .nav-sections ul > li {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-wrapper .nav-sections ul > li > a {
+  display: block;
+  margin-top: 5px; /* Space between icon and text */
 }

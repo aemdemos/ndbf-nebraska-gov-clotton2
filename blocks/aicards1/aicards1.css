@@ -1,0 +1,57 @@
+
+.aicards1-wrapper {
+    padding: 20px;
+    background-color: #fff4dc; /* Light beige/cream background color */
+}
+
+.aicards1 > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Ensure elements are side-by-side */
+    justify-content: space-between;
+    gap: 32px; /* Space between cards */
+}
+
+.aicards1 > ul > li {
+    border: 2px solid #ffd27f; /* Light orange/yellow border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background for each card */
+    padding: 20px; /* Adjust padding inside cards */
+    display: flex;
+    flex-direction: column; /* Ensure elements inside are stacked */
+    align-items: center;
+    width: calc(25% - 32px); /* Adjust width to ensure equal spacing */
+    box-sizing: border-box;
+}
+
+.aicards1 .aicards1-card-body {
+    margin-top: 20px; /* Margin between image and text */
+    text-align: center;
+}
+
+.aicards1 .aicards1-card-image {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; /* Center the image */
+}
+
+.aicards1 > ul > li img {
+    width: 80px; /* Reduced icon size */
+    height: auto;
+}
+
+.aicards1-card-body h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #007b7b; /* Teal/blue color for the text */
+    white-space: nowrap; /* Prevent text from breaking */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.aicards1-card-body a {
+    text-decoration: none;
+    color: inherit;
+}

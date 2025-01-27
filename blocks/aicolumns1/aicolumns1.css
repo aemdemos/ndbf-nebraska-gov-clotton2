@@ -1,0 +1,117 @@
+
+.aicolumns1-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.aicolumns1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.aicolumns1 > div {
+  flex: 1;
+}
+
+.aicolumns1 > div:first-child {
+  position: relative;
+  background-image: url('./media_16a737a0eaa91b53cd766644f7504daea2b69463b.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px;
+}
+
+.aicolumns1 > div:first-child h1,
+.aicolumns1 > div:first-child h3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.aicolumns1 > div:first-child ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aicolumns1 > div:first-child ul li {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.aicolumns1 > div:first-child ul li:last-child {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.aicolumns1 > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aicolumns1 > div:nth-child(2) ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aicolumns1 > div:nth-child(2) ul li {
+  padding: 10px 0;
+}
+
+.aicolumns1 > div:nth-child(2) h2 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aicolumns1 > div:nth-child(2) h2:nth-child(4) {
+  background-color: #b0003a;
+}
+
+.aicolumns1 > div:nth-child(2) h2:nth-child(5) {
+  background-color: #c0c92c;
+}
+
+.aicolumns1 > div:nth-child(2) h2:nth-child(6) {
+  background-color: #b0c4de;
+}
+
+.aicolumns1 > div:nth-child(2) h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.aicolumns1 > div:nth-child(2) h2 a:hover {
+  text-decoration: underline;
+}
+
+.aicolumns1 > div:first-child ul li:nth-child(2) {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.aicolumns1 > div:first-child ul li:nth-child(3),
+.aicolumns1 > div:first-child ul li:nth-child(4),
+.aicolumns1 > div:first-child ul li:nth-child(5) {
+  position: relative;
+  left: 20px;
+}

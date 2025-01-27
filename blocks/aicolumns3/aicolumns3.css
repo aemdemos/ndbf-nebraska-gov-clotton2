@@ -1,0 +1,80 @@
+
+/* Wrapper for the whole block */
+.aicolumns3-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+/* Main container with shadow and border */
+.aicolumns3 {
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px; /* Optional: round the corners */
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Flexbox layout for inner content */
+.aicolumns3 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increase space between elements */
+}
+
+/* Title styling */
+.aicolumns3 h2 {
+  text-align: center;
+  font-size: 24px;
+  margin: 0; /* Remove margins */
+  padding-bottom: 15px; /* Add padding below title */
+}
+
+/* Paragraph and link styling */
+.aicolumns3 p {
+  margin: 0;
+  line-height: 1.5;
+  padding-bottom: 10px; /* Add padding below paragraphs */
+}
+
+.aicolumns3 a {
+  color: #007bff; /* Link color */
+  text-decoration: underline; /* Ensure links are underlined */
+}
+
+.aicolumns3 a:hover {
+  text-decoration: underline;
+}
+
+/* "View all" link styling */
+.aicolumns3 .button-container {
+  text-align: right;
+  margin-top: 10px;
+  padding-top: 10px; /* Add padding above button */
+}
+
+.aicolumns3 .button-container a.button {
+  background: none; /* Remove button background */
+  color: #007bff; /* Match link color */
+  text-decoration: underline; /* Ensure links are underlined */
+  font-weight: normal; /* Match other links */
+  padding: 0; /* Remove button padding */
+  border: none; /* Remove button border */
+  border-radius: 0; /* Remove button border radius */
+}
+
+.aicolumns3 .button-container a.button:hover {
+  text-decoration: underline;
+}
+
+/* Media query to ensure responsiveness */
+@media (min-width: 900px) {
+  .aicolumns3 > div {
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
+    gap: 24px;
+  }
+}

@@ -1,95 +1,106 @@
 
 .aifooter-container > .aifooter-wrapper {
-    max-width: unset;
-    padding: 0;
-    margin: 0;
+  max-width: unset;
+  padding: 0;
+  margin: 0;
 }
 
 .aifooter-wrapper {
-    background-color: #4d4d4d; /* Dark background color */
-    padding: 20px;
+  background-color: #4a4a4a; /* Dark grey background */
+  padding: 20px;
+  color: white; /* White text color for contrast */
 }
 
 .aifooter {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Flex container for the top-level divs */
 .aifooter > div:first-child {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px; /* Space between columns */
+  display: flex;
+  flex-direction: row; /* Ensure columns are side by side */
+  justify-content: space-between;
+  gap: 20px; /* Space between columns */
 }
 
 .aifooter > div:first-child > div {
-    flex: 1;
+  flex: 1;
+  min-width: 200px; /* Minimum width for columns */
+  margin: 10px; /* Space between columns */
+  display: flex;
+  flex-direction: column; /* Ensure content within each column is stacked vertically */
 }
 
-.aifooter > div:first-child > div:first-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* Style for the nested content within columns */
+.aifooter div div {
+  margin-bottom: 20px;
 }
 
-.aifooter > div:first-child > div:first-child p:last-child {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px; /* Add some spacing above the badges */
+/* Style for the footer bottom section */
+.aifooter > div:last-child {
+  flex: 1 100%; /* Ensures it spans across the entire width */
+  text-align: center; /* Center text horizontally */
+  margin-top: 20px;
 }
 
-.aifooter > div:first-child > div:nth-child(2),
-.aifooter > div:first-child > div:nth-child(3),
-.aifooter > div:first-child > div:nth-child(4) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.aifooter img {
-    width: auto; /* Adjust image width to auto */
-    max-width: 100%; /* Ensure images don't overflow their container */
-}
-
-.aifooter h4 {
-    margin-bottom: 10px;
-}
-
-.aifooter ul,
-.aifooter p {
-    margin: 0;
-    padding: 0;
+.aifooter ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
 }
 
 .aifooter ul li {
-    list-style: none;
-    margin-bottom: 10px;
+  margin: 0 5px;
 }
 
-.aifooter ul li:last-child {
-    margin-bottom: 0;
+.aifooter a {
+  color: #f0c36d; /* Link color */
+  text-decoration: none;
+}
+
+.aifooter a:hover {
+  text-decoration: underline;
+}
+
+/* Images within the columns */
+.aifooter img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Specific styling for the "CONTACT" and "NAVIGATION" sections */
+.aifooter h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #f0c36d; /* Set heading color */
+}
+
+/* Align the icons and badges properly */
+.aifooter > div:first-child > div:first-child p:last-child {
+  display: flex;
+  justify-content: center; /* Center align the badges */
+  align-items: center;
+  margin-top: 20px; /* Add some spacing above the badges */
 }
 
 .aifooter .button-container {
-    margin-top: 10px;
-    text-align: left; /* Align button to the left */
+  text-align: left; /* Align button to the left */
 }
 
-.aifooter > div:last-child {
-    text-align: center;
-    margin-top: 20px;
-}
-
+/* Adjust the bottom section */
 .aifooter > div:last-child ul {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
 }
 
-.aifooter > div:last-child ul li {
-    list-style: none;
+/* Ensure left alignment for contact details and navigation links */
+.aifooter > div:first-child > div:nth-child(2) ul,
+.aifooter > div:first-child > div:nth-child(3) p {
+  text-align: left;
 }
 
 @media (min-width: 900px) {

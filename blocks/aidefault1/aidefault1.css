@@ -1,0 +1,36 @@
+
+.aidefault1-wrapper {
+  background-color: #c0d8e8; /* Set light blue background */
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  height: 100px; /* Set a fixed height for the block */
+  width: 100%; /* Ensure the block takes up the full width of its container */
+  padding: 0; /* Remove any default padding */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.aidefault1.block {
+  display: flex;
+  align-items: center; /* Vertically center the content within the block */
+  justify-content: center; /* Horizontally center the content within the block */
+  width: 100%;
+}
+
+.aidefault1.block > div {
+  display: flex;
+  align-items: center; /* Vertically center the content within the inner div */
+  justify-content: center; /* Horizontally center the content within the inner div */
+  width: 100%;
+}
+
+.aidefault1.block h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 24px; /* Adjust font size as needed */
+  color: #333; /* Set text color */
+  text-align: center; /* Ensure text is centered */
+  width: auto; /* Adjust to auto to let the content define the width */
+  display: flex;
+  align-items: center; /* Vertically center the text */
+  justify-content: center; /* Horizontally center the text */
+}

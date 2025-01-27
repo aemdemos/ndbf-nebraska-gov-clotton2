@@ -1,0 +1,38 @@
+
+.aidefault2-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Vertically center the content */
+  background-color: #e9f1f6; /* Light background color */
+  padding: 0; /* Remove additional padding */
+}
+
+.aidefault2-wrapper > .aidefault2.block {
+  display: flex;
+  flex-direction: column; /* Stack elements on top of each other */
+  align-items: center; /* Center the text and button horizontally */
+  text-align: center; /* Center the text inside the block */
+}
+
+.aidefault2-wrapper > .aidefault2.block > div {
+  display: flex;
+  flex-direction: column; /* Ensure text and button are stacked vertically */
+  align-items: center; /* Center the text and button horizontally */
+}
+
+.aidefault2-wrapper > .aidefault2.block .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; /* Increase space between text and button */
+}
+
+.aidefault2-wrapper > .aidefault2.block .button {
+  display: inline-block;
+  padding: 20px 40px; /* Increase padding for a larger button */
+  background-color: #005f73; /* Ensure button background color matches */
+  color: white; /* Button text color */
+  border-radius: 20px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from links */
+  font-family: Arial, sans-serif; /* Adjust font as needed */
+}

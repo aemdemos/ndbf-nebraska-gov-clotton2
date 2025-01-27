@@ -1,0 +1,73 @@
+
+.aicolumns2-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.aicolumns2 > div {
+  display: flex;
+  flex-direction: row; /* Ensure child divs are side by side */
+  justify-content: space-between; /* Space between child divs */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Ensure it takes full width of the parent */
+  max-width: 1200px; /* Optional: limit the maximum width */
+}
+
+.aicolumns2 > div > div {
+  background-color: #025a70; /* Blue background */
+  border-radius: 8px;
+  padding: 20px;
+  width: 45%; /* Adjust width as necessary */
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+}
+
+.aicolumns2 img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Space between the image and the text */
+}
+
+.aicolumns2 h3 {
+  display: none; /* Hide the heading [-] */
+}
+
+.aicolumns2 ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center text */
+}
+
+.aicolumns2 ul li {
+  font-size: 16px;
+  text-align: center; /* Center text within each list item */
+  margin-bottom: 5px; /* Add space between text items */
+}
+
+.aicolumns2 ul li span {
+  display: block; /* Ensure text is on a separate line */
+}
+
+.aicolumns2 ul li a {
+  color: white;
+  text-decoration: none;
+  display: block; /* Ensure links are on a separate line */
+}
+
+@media (min-width: 900px) {
+  .aicolumns2 > div {
+    gap: 24px; /* Space between the cards */
+  }
+
+  .aicolumns2 > div > div {
+    flex: 1;
+  }
+}
