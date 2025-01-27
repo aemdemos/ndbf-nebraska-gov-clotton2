@@ -1,0 +1,112 @@
+
+.aifooter-container > .aifooter-wrapper {
+    max-width: unset;
+    padding: 0;
+    margin: 0;
+}
+
+.aifooter-wrapper {
+    background-color: #4d4d4d; /* Dark background color */
+    padding: 20px;
+}
+
+.aifooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.aifooter > div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px; /* Space between columns */
+}
+
+.aifooter > div:first-child > div {
+    flex: 1;
+}
+
+.aifooter > div:first-child > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aifooter > div:first-child > div:first-child p:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Add some spacing above the badges */
+}
+
+.aifooter > div:first-child > div:nth-child(2),
+.aifooter > div:first-child > div:nth-child(3),
+.aifooter > div:first-child > div:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aifooter img {
+    width: auto; /* Adjust image width to auto */
+    max-width: 100%; /* Ensure images don't overflow their container */
+}
+
+.aifooter h4 {
+    margin-bottom: 10px;
+}
+
+.aifooter ul,
+.aifooter p {
+    margin: 0;
+    padding: 0;
+}
+
+.aifooter ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.aifooter ul li:last-child {
+    margin-bottom: 0;
+}
+
+.aifooter .button-container {
+    margin-top: 10px;
+    text-align: left; /* Align button to the left */
+}
+
+.aifooter > div:last-child {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.aifooter > div:last-child ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.aifooter > div:last-child ul li {
+    list-style: none;
+}
+
+@media (min-width: 900px) {
+    .aifooter > div:first-child {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .aifooter > div:first-child > div:first-child p {
+        margin-bottom: 10px; /* Ensure consistent spacing between paragraphs */
+    }
+
+    .aifooter > div:first-child > div:last-child {
+        margin-right: 0;
+    }
+
+    .aifooter h4 {
+        margin-bottom: 20px; /* Increase spacing below headings */
+    }
+}

@@ -1,0 +1,157 @@
+
+.aicolumns-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* First section with background image and text overlays */
+.aicolumns-wrapper > .aicolumns > div > div:first-child {
+    position: relative;
+    background: url('./media_16a737a0eaa91b53cd766644f7504daea2b69463b.jpeg?width=2000&amp;format=webply&amp;optimize=medium') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    color: white;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:first-child h1, 
+.aicolumns-wrapper > .aicolumns > div > div:first-child h3 {
+    margin: 0;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:first-child h1 {
+    align-self: flex-start;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:first-child h3 {
+    align-self: flex-start;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:first-child ul {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    margin: 0;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:first-child ul li {
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Second section with two subsections side by side */
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(2) > div:nth-child(1) {
+    flex: 1;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(2) > div:nth-child(1) img {
+    width: 100%;
+    height: auto;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(2) > div:nth-child(2) {
+    flex: 1;
+}
+
+/* Category icons in a row */
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(3) picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(3) h2 {
+    margin-top: 10px;
+}
+
+/* Buttons in a row */
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(4) .button-container {
+    flex: 1;
+    text-align: center;
+}
+
+/* Notices section */
+.aicolumns-wrapper #notices {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+.aicolumns-wrapper #notices p {
+    margin: 5px 0;
+}
+
+/* Footer section */
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(6) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(6) p,
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(6) ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(6) ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.aicolumns-wrapper > .aicolumns > div > div:nth-child(6) ul li {
+    margin: 0 5px;
+}
+
+/* Ensure images are responsive */
+.aicolumns-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure buttons are styled correctly */
+.aicolumns-wrapper .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--link-color);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.aicolumns-wrapper .button:hover {
+    background-color: var(--link-hover-color);
+}
